@@ -1,0 +1,31 @@
+<!------------------------------People You May Know Component-------------------------->
+<div class="main-people-container">                        <!-- MAin Div for People YOu MAy Know-->            
+  <div class="inner-pymk-container">                       <!-- Inner Container for Margins-->
+    <div class="title-container">                          <!-- Title Of the PYMK Component -->
+      <ion-label>People You May Know</ion-label>
+    </div>
+    <div class="lower-info-container" *ngFor="let item of info">   <!-- Lower Content for PYMK -->
+      <div class="left-image-conatiner">                           <!-- Container For Profile Pic-->
+        <ion-avatar>                                               <!-- For Circular Image-->
+          <img src="{{item.pic}}">
+        </ion-avatar>
+      </div>
+      <div class="name_and_title_container">                       <!-- Conatiner For Name, School and friends Info-->
+        <div class="name"><ion-label>{{item.name}}</ion-label></div>
+        <div class="school-name"><ion-label>{{item.school}}</ion-label></div>
+        <div class="mutual-friends"><ion-label>{{item.mutual_friends}}</ion-label></div>
+        
+      </div>
+      <div class="right_icon_container">                           <!-- Container for Add Friend Icon-->
+        <ion-avatar>
+          <img src="../../../assets/icon/Group 84200.png">
+        </ion-avatar>
+      </div>
+
+    </div>
+    
+  </div>
+  <div class="seemore-container">                                 <!--contaner for See More at the bottom-->
+    <ion-label>See More</ion-label>
+  </div>
+</div>

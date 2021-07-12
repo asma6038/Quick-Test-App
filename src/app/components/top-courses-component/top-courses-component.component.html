@@ -1,0 +1,27 @@
+<!----------------------Top 10 Courses Component-->
+
+<div class="main-courses-container">                 <!-- main courses container-->
+  <div class="courses-inner-container">              <!--inner courses container for margins-->
+    <div class="upper-title-container">              <!-- upper title container for title of the component-->
+      <ion-label>Top 10 Courses</ion-label>
+    </div>
+    <div class="lower-courses-info-container" *ngFor="let item of courses">  <!-- Lower conatienr for Courses info-->
+      <div class="img-courses-container">                                    <!-- left side image for courses info-->
+        <ion-avatar>
+          <img src="{{item.img}}">
+        </ion-avatar>
+      </div>
+      <div class="title_And_university_container">                           <!-- Course Title and University NAme contaienr-->
+        <div class="course-title">                                           <!--Course Title-->
+          <ion-label>{{item.course_title}}</ion-label>
+        </div>
+        <div class="university-name">                                        <!--University Name-->
+          <ion-label>{{item.university_name}}</ion-label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="seeall-container">                                             <!--See All Courses Container-->
+    <ion-label>See All</ion-label>
+  </div>
+</div>

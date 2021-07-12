@@ -1,0 +1,25 @@
+ <!-----------------------------Tags and Search Bar component------------------------------------->
+ <div class="main-search-tag-container">           <!-- main search tag aontainer-->
+   <div class="inner-tags-container">              <!-- Inner tag container for margins-->
+     <div class="upper-container">                 <!-- Upper conatienr for back button and search bar-->
+       <div class="back-button-container">         <!-- back button div-->
+        <ion-icon name="chevron-back-outline"></ion-icon>
+       </div>
+       <div class="search-bar-container">          <!-- Search Bar Main Div-->
+         <div class="search-icon">                 <!-- Search Icon Div-->
+           <img src="../../../assets/icon/icons8-search-30.png">
+         </div>
+         <div class="search-bar">                  <!-- Seacrh bar (Input) DIV-->
+           <ion-input placeholder="Search"></ion-input>
+         </div>
+       </div>
+     </div>
+     <div class="lower-container">                 <!--Lower Container For Search Tags-->
+       <div class="tags-container">                <!--Main Tag container for margins-->
+        <div class="tags"  *ngFor="let item of tags"> <!-- tags container for showing tag_title-->
+          <ion-label>{{item.tag_name}}</ion-label>
+        </div>
+       </div>
+     </div>
+   </div>
+ </div>

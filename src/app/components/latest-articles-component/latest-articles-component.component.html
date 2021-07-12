@@ -1,0 +1,35 @@
+
+ <!-- Latest Article Component -->
+<div class="latest-article-main-div">
+  <div class="inner-article-container">             <!-- Inner Div For margins-->
+    <div class="upper-title-container">             <!-- Upper Conatiner for Title and side menu -->
+      <div class="component-title-container">       <!-- Title for component -->
+        <ion-label>Latest Articles For Today</ion-label>
+      </div>
+      <div class="seeall-container">
+        <ion-label>See All</ion-label>
+      </div>
+    </div>
+    <div class="lower-info-container">              <!-- Lower Curved Card View-->
+      <div class="curved-main-container" *ngFor="let item of article_info">         <!-- Curved Conatiner/Div-->
+        <div class="image-container">               <!-- Image for Card view-->
+          <img src="{{item.image}}">
+        </div>
+        <div class="title-container">               <!-- Title Div of Card View-->
+          <ion-label>{{item.title}}</ion-label>
+        </div>
+        <div class="written-by-container">          <!-- Written By Div of Card View-->
+          <ion-label>written by {{item.written_by}}</ion-label>
+        </div>
+        <div class="date-and-icon-container">       <!-- Date and Icon At the Bottom-->
+          <div class="icon"> 
+            <img src={{item.icon}}>
+          </div>
+          <div class="date">
+            <ion-label>{{item.date}}</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

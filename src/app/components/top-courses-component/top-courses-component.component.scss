@@ -1,0 +1,98 @@
+//   ----------------------- main courses container--------------------
+.main-courses-container{
+    margin-top: 10px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    // --------------------- inner courses container for margins------------------------
+    .courses-inner-container{
+        flex:1;
+        margin: 10px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        // ------------------------ upper title container of the component----------------
+        .upper-title-container{
+            flex:1;
+            font-family: 'Roboto-Light';
+            font-size: 16px;
+            font-weight: bolder;
+        }
+        // ------------------- Lower Containe rfor courses info ---------------------------
+        .lower-courses-info-container{
+            display: flex;
+            margin-top: 10px;
+            flex-direction: row;
+            //--------------- image container for courses info-----------------------------
+            .img-courses-container
+            {
+                padding-top: 4px;
+                ion-avatar{
+                    width: 37px;
+                    height: 37px;
+                    
+                }
+            }
+            // ---------------------- Course title and University Name container---------------- 
+            .title_And_university_container
+            {
+                width: fit-content;
+                padding: 5px 10px 5px 10px;
+                display: flex;
+                margin-left: 5px;
+                flex-direction: column;
+                // ------------------ Course Title Container---------------------------------
+                .course-title
+                {
+                    flex:1;
+                    margin-bottom: 4px;
+                    font-size: 14px;
+                    font-family: 'Roboto-Light';
+                    font-weight: bolder;
+                    // padding-right: 5px;
+                    // padding-left: 5px;
+
+                }
+                // --------------------- University Name container------------------
+                .university-name
+                {
+                    flex:1;
+                    font-size: 12px;
+                    font-family: 'Roboto-Light';
+                    font-weight: normal;
+                    padding-top: 3px;
+                    // padding-right: 5px;
+                    // padding-left: 5px;
+                    padding-bottom: 10px;
+                    // border-bottom:#C7C8CA;
+                    // border-top: hidden !important ;
+                    // border-right: hidden !important;
+                    // border-left: hidden !important;
+                    // border-width: 0.2px;
+                    // border-style: solid;
+                }
+            }
+        }
+    }
+    // ------------------------- SEE ALL Menu side Container------------------
+    .seeall-container
+    {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: 'Roboto-Light';
+        font-size: 14px;
+        padding-top: 10px;
+        color: #2B68A0;
+        font-weight: bold;
+        border-bottom:hidden!important;
+        border-top: #C7C8CA;
+        border-right: hidden !important;
+        border-left: hidden !important;
+        border-width: 0.2px;
+        margin-left: 15px;
+        margin-right: 30px;
+        border-style: solid;
+
+    }
+
+}

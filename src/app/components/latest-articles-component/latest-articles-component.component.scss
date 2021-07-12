@@ -1,0 +1,95 @@
+.latest-article-main-div{   // Main container for Latest Article Component 
+    display: flex;
+    margin-top: 10px;                       
+    background-color:#FFFFFF;    //bg color of LAtest Article Component
+    flex-direction: column;
+    // ------------------------ inner article container-----------------------------//
+    .inner-article-container{                 //for giving margins 10px
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+         // ------------------------ Upper title Conatiner-----------------------------//
+        .upper-title-container{              // for back button and search bar
+            flex:1;
+            display: flex;
+            flex-direction: row;
+            // ------------------------ Upper title Conatiner-----------------------------//
+            .component-title-container{                //title of the component 'Latest Articles for Today'
+                flex:6;
+                font-family: 'Roboto-Light';
+                font-size: 16px;
+                font-weight: bolder;
+            }
+            // ------------------------ See All Container-----------------------------//
+            .seeall-container{                        //left side see all contaiiner
+                flex:1;
+                font-family: 'Roboto-Light';
+                font-size: 16px;
+                font-weight: bolder;
+                color:#2B68A0;
+
+            }
+        }
+        // >>>>>>>>>>>>>>>>>>>>>>>>>>> Lower Info Container <<<<<<<<<<<<<<<<<<<<<<<
+        .lower-info-container{                      // main content of the Latest_article_component
+            flex:5;
+            margin-top: 10px;                       //margin from the upper ttitle 
+            overflow: scroll;                      // it'll scroll the div vertically  
+            display:flex;
+            margin-bottom: 10px;
+            // >>>>>>>>>>>>>>>>>>>>>   Curved Card For LAtest Article Info <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+            .curved-main-container{                          // curved card for the latest article 
+                border-radius: 7px;                          //curve by using border-radius
+                width: 215px ;                               //width of the card
+                margin-right: 15px;
+                margin-bottom: 10px;
+                height: fit-content;
+                box-shadow: 0 4px 8px 0 rgba(104, 99, 99, 0.2), 0 6px 20px 0 rgba(78, 77, 77, 0.4);      //shadow of the card
+                // >>>>>>>>>>>>>>>>>>>>>> Image for Card <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                .image-container{       //image used at the top of card
+                    width: 215px;
+                    height: 126px;
+                }
+                // >>>>>>>>>>>>>>>>>> Title of Latest News Article <<<<<<<<<<<<<<<<<<<<<<<<<
+                .title-container{            //title of the latest news
+                    padding:10px;
+                    font-size: 16px;
+                    font-family: 'Roboto-Light';           //font family imported in theme/global.css
+                    font-weight: bolder;
+
+                }
+                // >>>>>>>>>>>>>>>>>>>>>>>>>> Written By Container <<<<<<<<<<<<<<<<<<<<<<<<<<
+                .written-by-container{             //written by container
+                    padding:10px;
+                    font-size: 12px;
+                    font-family: 'Roboto-Light';
+                    font-weight: normal;
+                    color: #77787B;
+                }
+                // >>>>>>>>>>>>>>>>>>> Date and Icon conatiner at the bottom <<<<<<<<<<<<<<<<<<<<
+                .date-and-icon-container{          //date and icon at the bottom
+                    display: flex;
+                    padding: 10px;
+                    flex-direction: row;
+                    .icon{                        //icon
+                        flex:2;
+                    }
+                    .date{                        //date
+                        flex:1;
+                        font-size: 12px;
+                        font-family: 'Roboto-Light';
+                        font-weight: normal;
+                        color: #77787B;
+
+                    }
+                }
+            }
+        }
+        }
+    }
+     
+       
+
+  
+     
+    

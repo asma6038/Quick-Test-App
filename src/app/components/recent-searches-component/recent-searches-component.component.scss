@@ -1,0 +1,66 @@
+// ---------------------- main recent searches container--------------------------//
+.main-recent-searches-container{
+    margin-top: 10px;
+    background-color:white;
+    display: flex;
+    // ----------------- inner recent searches container for margin------------------//
+    .inner-recent-searches-container{
+        flex:1;
+        margin: 10px;
+        display:flex;
+        flex-direction: column;
+        // ------------------ Upper containe fot Title and Clear All--------------//
+        .upper-container{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+            // ------------------ Title of the Component ----------------------//
+            .component-title-container{
+                flex:6;
+                font-family: 'Roboto-Light';
+                font-size: 16px;
+                font-weight: bolder;
+
+            }
+            // ---------------------- Clear container ------------------------------//
+            .clear-container{
+                flex:1;
+                font-family: 'Roboto-Light';
+                font-size: 16px;
+                font-weight: bolder;
+                color:#2B68A0;
+            }
+        }
+        // ------------------ Lower Conatiner(Main Content of Recent Searches)-----------------//
+        .lower-container{
+            margin-top: 10px;
+            flex:1;
+            display: flex;
+            flex-direction: row;
+            padding-top: 10px;
+            padding: 0px 5px 5px 0px;
+            justify-content: center;
+            align-content: center;
+            //----------------------------- image conatiner(search image )
+            .image-container{
+                flex:0.8;
+                ion-avatar{
+                width: 25px;
+                height: 25px;
+                align-items:flex-start;
+                }
+            }
+            // -------------------- title of the Search content ------------------------//
+            .title-container{
+                font-family: 'Roboto-Light';
+                padding: 2px 2px 2px 2px ;
+                font-weight: 550;
+                font-size: 14px;
+                flex:6;
+
+
+            }
+
+        }
+    }
+}

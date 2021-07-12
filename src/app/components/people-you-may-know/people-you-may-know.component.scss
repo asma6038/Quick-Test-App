@@ -1,0 +1,111 @@
+// -------------------------- Main PEople You May Know Container ---------------------
+.main-people-container{
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    // ------------------   Inner PYMK container for Margins ---------------------------
+    .inner-pymk-container{
+        margin-top: 10px;
+        flex: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        // ---------------------- Title of the component PYMK---------------------------
+        .title-container{
+            font-family: 'Roboto-Light';
+                font-size: 16px;
+                font-weight: bolder;
+        }
+        // --------------------  lower content of the PYMK conatiner ---------------------
+        .lower-info-container{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            // ----------------------- Left Image conatienr(Profile Pic) ----------------
+            .left-image-conatiner{
+                flex:0.7;
+                padding-top: 5px;
+                ion-avatar{
+                    width: 37px;
+                    height: 37px;
+                }
+            }
+            // ----------------- Name and title Container----------------------------
+            .name_and_title_container{
+                flex:3.6;
+                display: flex;
+                flex-direction: column;
+                border-bottom:#C7C8CA;
+                border-top: hidden !important;
+                border-right: hidden !important;
+                border-left: hidden !important;
+                border-width: 0.2px;
+                border-style: solid;
+                //  ------------------- Profile Name Container -----------------------
+                .name{
+                    flex:1;
+                    padding: 5px 5px 5px 5px;
+                    font-family: 'Roboto-Light';
+                    font-size:16px;
+                    font-weight: bolder;
+                }
+                // ------------------------ School NAme container------------------------
+                .school-name{
+                    flex:1;
+                    padding: 5px 5px 5px 5px;
+                    font-family: 'Roboto-Light';
+                    font-size:12px;
+                    font-weight: 500;
+
+                }
+                // -------------------- Mutual friends info container---------------
+                .mutual-friends{
+                    flex:1;
+                    padding: 5px 5px 5px 5px;
+                    font-family: 'Roboto-Light';
+                    font-size:10px;
+                    color: blue;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+
+                }
+
+            }
+            // -------------------- Right Icon Container(Add Friend icon)-----------
+            .right_icon_container{
+                flex:0.7;
+                align-self: center;
+                ion-avatar{
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+    }
+    //--------------------------- SEE More Container--------------------------------------
+    .seemore-container{
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: 'Roboto-Light';
+        font-size: 14px;
+        padding-top: 10px;
+        color: #2B68A0;
+        font-weight: bold;
+        border-bottom:hidden!important;
+        border-top: #C7C8CA;
+        border-right: hidden !important;
+        border-left: hidden !important;
+        border-width: 0.2px;
+        margin-left: 15px;
+        margin-right: 30px;
+        border-style: solid;
+
+    }
+}

@@ -1,0 +1,23 @@
+<!-----------------------Recent Searches Component  -->
+<div class="main-recent-searches-container">                  <!-- Main Conatiner of Recent Searches Component  -->
+     <div class="inner-recent-searches-container">            <!--- Inner Container for MArgins-->
+         <div class="upper-container">                        <!--   Upper Conatiner for Component Title and Clear Menu-->
+             <div class="component-title-container">          <!--   Title Container-->
+                 <ion-label>Recent Searches</ion-label>
+             </div>
+             <div class="clear-container">                    <!-- Clear Menu Container-->
+                 <ion-label> Clear</ion-label>
+             </div>
+         </div>
+         <div class="lower-container" *ngFor="let item of items">     <!-- Lower Conatiner For the Component main content-->
+             <div class="image-container">                            <!-- image container for search image-->
+                 <ion-avatar >
+                     <img src="{{item.image}}">
+                 </ion-avatar>
+             </div>
+             <div class="title-container">                            <!-- title of the search -->
+                 <ion-label>{{item.title}}</ion-label>
+             </div>
+         </div>
+     </div>
+ </div>
